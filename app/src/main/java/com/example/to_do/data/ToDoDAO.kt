@@ -9,7 +9,6 @@ import com.example.to_do.data.model.ToDoData
 
 @Dao
 interface ToDoDAO {
-
     @Query("SELECT * From tasks_table order by id ASC")
     fun getAllData(): LiveData<List<ToDoData>>
 
